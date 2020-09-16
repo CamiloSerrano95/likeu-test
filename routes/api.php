@@ -18,3 +18,12 @@ use Illuminate\Support\Facades\Route;
 Route::post('login', 'AuthController@login');
 Route::post('logout', 'AuthController@logout');
 Route::post('me', 'AuthController@me');
+
+// Routes for user
+Route::prefix('user')->group(function() {
+    Route::get('all', 'UserController@all');
+    Route::get('/{id}', 'UserController@getById');
+    Route::post('create', 'UserController@store');
+    Route::put('update/{id}', 'UserController@update');
+    Route::delete('delete/{id}', 'UserController@destroy');
+});
