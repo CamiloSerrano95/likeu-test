@@ -27,3 +27,11 @@ Route::prefix('user')->group(function() {
     Route::put('update/{id}', 'UserController@update');
     Route::delete('delete/{id}', 'UserController@destroy');
 });
+
+Route::prefix('client')->group(function() {
+    Route::get('all', 'ClientController@all');
+    Route::get('/{id}', 'ClientController@getById');
+    Route::post('create', 'ClientController@store');
+    Route::put('update/{id}', 'ClientController@update');
+    Route::delete('delete/{id}', 'ClientController@destroy');
+});
