@@ -7,6 +7,7 @@
     <li>composer install</li>
     <li>cp .env.example .env</li>
     <li>php artisan key:generate</li>
+    <li>php artisan jwt:secret</li>
 </ul>
 
 <h2>Para correr la base de datos: </h2>
@@ -17,6 +18,13 @@
     <li><strong>DB_DATABASE: </strong>En esta linea colocara de su nombre de su base de datos (recuerde haber creado la base de datos con anterioridad en su gestor de base de datos)</li>
     <li><strong>DB_USERNAME: </strong>En esta linea colocara el usuario de su base de datos</li>
     <li><strong>DB_PASSWORD: </strong>En esta linea colocara la contraseña para ese usuario de su base de datos</li>
+</ul>
+
+<p>Puede usar la siguiente configuracion recomendada</p>
+<ul>
+    <li><strong>DB_DATABASE: </strong>likeu-test</li>
+    <li><strong>DB_USERNAME: </strong>root</li>
+    <li><strong>DB_PASSWORD: </strong></li>
 </ul>
 
 <h2>Para correr y crear todas las tablas en la base de datos: </h2>
