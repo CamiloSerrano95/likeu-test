@@ -23,6 +23,11 @@ class AppServiceProvider extends ServiceProvider
             'App\Repository\Client\ClientRepositoryInterface',
             'App\Repository\Client\ClientRepository'
         );
+
+        $this->app->bind(
+            'App\Repository\Schedule\ScheduleRepositoryInterface',
+            'App\Repository\Schedule\ScheduleRepository'
+        );
     }
 
     /**

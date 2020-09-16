@@ -35,3 +35,12 @@ Route::prefix('client')->group(function() {
     Route::put('update/{id}', 'ClientController@update');
     Route::delete('delete/{id}', 'ClientController@destroy');
 });
+
+Route::prefix('schedule')->group(function() {
+    Route::get('all', 'ScheduleController@all');
+    Route::get('/{id}', 'ScheduleController@getById');
+    Route::post('create', 'ScheduleController@store');
+    Route::put('update/{id}', 'ScheduleController@update');
+    Route::delete('delete/{id}', 'ScheduleController@destroy');
+    Route::put('update-status/{id}', 'ScheduleController@updateStatus');
+});
