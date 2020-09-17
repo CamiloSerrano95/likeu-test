@@ -34,3 +34,6 @@
 <p>si presenta problemas con el comando anterio pruebe con: </p> 
 <p>php artisan migrate:fresh --seed o php artisan migrate:refresh --seed</p>
 <p>Por ultimo para correr la aplicacion ejecute el comando: php artisan serve</p>
+
+<h2>Documentacion de la API </h2>
+<p>Para observar la documentacion de la API despues de tener el proyecto corriendo, ingrese desde un navegador web al enlance que le genera el comando php artisan serve añadiendo a ese enlance lo siguiente /api/documentation, <strong>Ejemplo: </strong>http://localhost:8000/api/documentation</p>
