@@ -106,14 +106,28 @@ class UserController extends Controller
 *      @OA\Property(property="email", type="string")
 *    )
 * ),
-* @OA\Response(
-*    response=401,
-*    description="Accion invalida",
-*    @OA\JsonContent(
-*       @OA\Property(property="message", type="string", example="Unauthorized")
+*   @OA\Response(
+*       response=404,
+*       description="Token no encontrado en la peticion",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Authorization Token not found")
 *       )
-*     )
-* )
+*   ),
+*   @OA\Response(
+*       response=422,
+*       description="Token es invalido",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Invalid")
+*       )
+*   ),
+*   @OA\Response(
+*       response=423,
+*       description="Token ha expirado",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Expired")
+*       )
+*    )
+*)
 */
 
 /**
@@ -144,14 +158,28 @@ class UserController extends Controller
 *      @OA\Property(property="email", type="string")
 *    )
 * ),
-* @OA\Response(
-*    response=401,
-*    description="Accion invalida",
-*    @OA\JsonContent(
-*       @OA\Property(property="message", type="string", example="Unauthorized")
+*   @OA\Response(
+*       response=404,
+*       description="Token no encontrado en la peticion",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Authorization Token not found")
 *       )
-*     )
-* )
+*   ),
+*   @OA\Response(
+*       response=422,
+*       description="Token es invalido",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Invalid")
+*       )
+*   ),
+*   @OA\Response(
+*       response=423,
+*       description="Token ha expirado",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Expired")
+*       )
+*    )
+*)
 */
 
 /**
@@ -179,14 +207,36 @@ class UserController extends Controller
 *      @OA\Property(property="message", type="string", example="Usuario creado exitosamente")
 *    )
 * ),
-* @OA\Response(
-*    response=401,
-*    description="Accion no permitida",
-*    @OA\JsonContent(
-*       @OA\Property(property="message", type="string", example="Unauthorized")
+*   @OA\Response(
+*       response=400,
+*       description="Errores de validacion",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="The given data was invalid."),
+*           @OA\Property(property="errors", type="object")
 *       )
-*     )
-* )
+*   ),
+*   @OA\Response(
+*       response=404,
+*       description="Token no encontrado en la peticion",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Authorization Token not found")
+*       )
+*   ),
+*   @OA\Response(
+*       response=422,
+*       description="Token es invalido",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Invalid")
+*       )
+*   ),
+*   @OA\Response(
+*       response=423,
+*       description="Token ha expirado",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Expired")
+*       )
+*    )
+*)
 */
 
 /**
@@ -225,14 +275,36 @@ class UserController extends Controller
 *      @OA\Property(property="message", type="string", example="Usuario actualizado exitosamente")
 *    )
 * ),
-* @OA\Response(
-*    response=401,
-*    description="Accion no permitida",
-*    @OA\JsonContent(
-*       @OA\Property(property="message", type="string", example="Unauthorized")
+*   @OA\Response(
+*       response=400,
+*       description="Errores de validacion",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="The given data was invalid."),
+*           @OA\Property(property="errors", type="object")
 *       )
-*     )
-* )
+*   ),
+*   @OA\Response(
+*       response=404,
+*       description="Token no encontrado en la peticion",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Authorization Token not found")
+*       )
+*   ),
+*   @OA\Response(
+*       response=422,
+*       description="Token es invalido",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Invalid")
+*       )
+*   ),
+*   @OA\Response(
+*       response=423,
+*       description="Token ha expirado",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Expired")
+*       )
+*    )
+*)
 */
 
 /**
@@ -261,12 +333,26 @@ class UserController extends Controller
 *      @OA\Property(property="message", type="string", example="Usuario eliminado")
 *    )
 * ),
-* @OA\Response(
-*    response=401,
-*    description="Accion no permitida",
-*    @OA\JsonContent(
-*       @OA\Property(property="message", type="string", example="Unauthorized")
+*   @OA\Response(
+*       response=404,
+*       description="Token no encontrado en la peticion",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Authorization Token not found")
 *       )
-*     )
+*   ),
+*   @OA\Response(
+*       response=422,
+*       description="Token es invalido",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Invalid")
+*       )
+*   ),
+*   @OA\Response(
+*       response=423,
+*       description="Token ha expirado",
+*       @OA\JsonContent(
+*           @OA\Property(property="message", type="string", example="Token is Expired")
+*       )
+*    )
 * )
 */
