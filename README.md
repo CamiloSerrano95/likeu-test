@@ -37,3 +37,9 @@
 
 <h2>Documentacion de la API </h2>
 <p>Para observar la documentacion de la API despues de tener el proyecto corriendo, ingrese desde un navegador web al enlance que le genera el comando php artisan serve añadiendo a ese enlance lo siguiente /api/documentation, <strong>Ejemplo: </strong>http://localhost:8000/api/documentation</p>
+
+<p>Usuario para probar la aplicacion: </p>
+<ul>
+    <li><strong>email: </strong>testphp@likeu.com</li>
+    <li><strong>password: </strong>123456</li>
+</ul>
