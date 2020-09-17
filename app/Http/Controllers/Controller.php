@@ -11,3 +11,22 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+/**
+ * @OA\Info(
+ *    title="Likeu Test API",
+ *    version="1.0.0",
+ * )
+*/
+
+/**
+ * @OA\SecurityScheme(
+ *     type="http",
+ *
+ *     name="Token based Based",
+ *     in="header",
+ *     scheme="bearer",
+ *     bearerFormat="JWT",
+ *     securityScheme="bearer_token",
+ * )
+*/
